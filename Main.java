@@ -30,7 +30,7 @@ public class Main {
                     ValidadorEdad.validar(leer);
                     break;
                 case 3:
-                    System.out.println("→ Número perfecto (aún no implementado)");
+                    ValidadorPerfecto.validar(leer);
                     break;
                 case 4:
                     System.out.println("→ Palíndromo (aún no implementado)");
