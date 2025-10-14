@@ -6,26 +6,24 @@ public class Main {
         int opcion;
 
         do {
-            System.out.println("\n=== MENÚ PRINCIPAL ===");
-            System.out.println("1. Zodiaco");
-            System.out.println("2. Mayoría de edad");
-            System.out.println("3. Número perfecto");
-            System.out.println("4. Palíndromo");
-            System.out.println("5. Capicúa");
-            System.out.println("6. Texto a Morse");
-            System.out.println("7. Morse a Texto");
-            System.out.println("8. Gestor de Caballeros del Zodiaco");
+            System.out.println("\n ***MENU PRINCIPAL*** ");
+            System.out.println("1. Zodiaco por fecha de nacimiento");
+            System.out.println("2. Validador de mayoria de edad");
+            System.out.println("3. Validador de numero perfecto");
+            System.out.println("4. Validador de palindromo");
+            System.out.println("5. Validador de capicua");
+            System.out.println("6. Conversor texto a morse");
+            System.out.println("7. Conversor morse a texto");
+            System.out.println("8. Gestor de caballeros del zodiaco");
             System.out.println("9. Juego libre");
             System.out.println("0. Salir");
-            System.out.print("Elige una opción: ");
-
+            System.out.print("Elige una opcion: ");
             opcion = leer.nextInt();
-            leer.nextLine(); // Limpia el salto de línea
+            leer.nextLine();
 
             switch (opcion) {
                 case 1:
                     Zodiaco.calcularSigno(leer);
-                    break;
                 case 2:
                     ValidadorEdad.validar(leer);
                     break;
@@ -34,30 +32,28 @@ public class Main {
                     break;
                 case 4:
                     ValidadorPalindromo.validar(leer);
-
                     break;
                 case 5:
-                    System.out.println("Capicúa (aún no implementado)");
+                    ValidadorCapicua.validar(leer);
                     break;
                 case 6:
-                    System.out.println("Texto a Morse (aún no implementado)");
+                    ConversorTextoAMorse.convertir(leer);
                     break;
                 case 7:
-                    System.out.println("Morse a Texto (aún no implementado)");
+                    ConversorMorseATexto.convertir(leer);
                     break;
                 case 8:
-                    System.out.println("Gestor de Caballeros (aún no implementado)");
+                    System.out.println("Gestor de caballeros (proximamente)");
                     break;
                 case 9:
-                    System.out.println("Juego libre (aún no implementado)");
+                    System.out.println("Juego libre (proximamente)");
                     break;
                 case 0:
                     System.out.println("Saliendo del programa...");
                     break;
                 default:
-                    System.out.println("Opción no válida, intenta de nuevo.");
+                    System.out.println("Opcion no disponible, intenta de nuevo");
             }
-
         } while (opcion != 0);
 
         leer.close();
