@@ -39,3 +39,4 @@ public class ConversorTextoAMorse {
         System.out.println(resultado);
     }
 }
+// habian dos formas de hacerlo, con HashMap y con arreglos, se decidio usar la primera opcion

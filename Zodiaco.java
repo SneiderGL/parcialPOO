@@ -52,7 +52,10 @@ public class Zodiaco {
             signo = "Piscis"; caballero = "Afrodita de Piscis";
         }
 
+        // Mensaje final
         System.out.println("\nTienes " + edad + " años y eres " + signo +
-                           ", por ende tu caballero del zodiaco es " + caballero + ".");
+                           ", por ende tu caballero del zodiaco es " + caballero + ".\n");
+
+        // No hay bucles aquí, así que al terminar vuelve automáticamente al menú principal
     }
 }
