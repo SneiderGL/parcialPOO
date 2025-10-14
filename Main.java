@@ -24,7 +24,7 @@ public class Main {
 
             switch (opcion) {
                 case 1:
-                    System.out.println("→ Zodiaco (aún no implementado)");
+                    Zodiaco.calcularSigno(leer);
                     break;
                 case 2:
                     System.out.println("→ Mayoría de edad (aún no implementado)");
