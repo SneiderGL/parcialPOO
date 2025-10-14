@@ -43,3 +43,4 @@ public class ConversorMorseATexto {
         System.out.println(resultado.trim());
     }
 }
+// habian dos formas de hacerlo, con HashMap y con arreglos, se decidio usar la primera opcion
