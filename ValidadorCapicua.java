@@ -16,5 +16,7 @@ public class ValidadorCapicua {
         } else {
             System.out.println("\n" + numero + " no es un numero capicua.");
         }
+        
     }
 }
+// se agrego con exito este validador, valida numeros capicuas
