@@ -33,22 +33,22 @@ public class Main {
                     ValidadorPerfecto.validar(leer);
                     break;
                 case 4:
-                    System.out.println("→ Palíndromo (aún no implementado)");
+                    ValidadorPalindromo.validar(leer);
                     break;
                 case 5:
-                    System.out.println("→ Capicúa (aún no implementado)");
+                    System.out.println("Capicúa (aún no implementado)");
                     break;
                 case 6:
-                    System.out.println("→ Texto a Morse (aún no implementado)");
+                    System.out.println("Texto a Morse (aún no implementado)");
                     break;
                 case 7:
-                    System.out.println("→ Morse a Texto (aún no implementado)");
+                    System.out.println("Morse a Texto (aún no implementado)");
                     break;
                 case 8:
-                    System.out.println("→ Gestor de Caballeros (aún no implementado)");
+                    System.out.println("Gestor de Caballeros (aún no implementado)");
                     break;
                 case 9:
-                    System.out.println("→ Juego libre (aún no implementado)");
+                    System.out.println("Juego libre (aún no implementado)");
                     break;
                 case 0:
                     System.out.println("Saliendo del programa...");
