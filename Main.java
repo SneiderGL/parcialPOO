@@ -34,6 +34,7 @@ public class Main {
                     break;
                 case 4:
                     ValidadorPalindromo.validar(leer);
+
                     break;
                 case 5:
                     System.out.println("Capicúa (aún no implementado)");

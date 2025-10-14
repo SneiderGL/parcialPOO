@@ -6,7 +6,6 @@ public class ValidadorPalindromo {
         System.out.print("Ingresa una palabra o frase: ");
         String texto = leer.nextLine();
 
-        // Normalizar el texto
         texto = texto.toLowerCase()
                      .replace(" ", "")
                      .replace("á", "a")
@@ -15,10 +14,8 @@ public class ValidadorPalindromo {
                      .replace("ó", "o")
                      .replace("ú", "u");
 
-        // Invertir el texto con StringBuilder
         String invertido = new StringBuilder(texto).reverse().toString();
 
-        // Verificar si es palindromo
         if (texto.equals(invertido)) {
             System.out.println("\n" + texto + " es un palindromo.");
         } else {
