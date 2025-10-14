@@ -27,7 +27,7 @@ public class Main {
                     Zodiaco.calcularSigno(leer);
                     break;
                 case 2:
-                    System.out.println("→ Mayoría de edad (aún no implementado)");
+                    ValidadorEdad.validar(leer);
                     break;
                 case 3:
                     System.out.println("→ Número perfecto (aún no implementado)");
