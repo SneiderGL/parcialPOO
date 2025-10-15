@@ -73,7 +73,7 @@ public class Main {
 
 
                 case 9:
-                    System.out.println("Juego libre (proximamente)");
+                     MiniMinecraft.jugar(leer);
                     break;
                 case 0:
                     System.out.println("Saliendo del programa...");
