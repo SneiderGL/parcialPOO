@@ -24,6 +24,7 @@ public class Main {
             switch (opcion) {
                 case 1:
                     Zodiaco.calcularSigno(leer);
+                    break;
                 case 2:
                     ValidadorEdad.validar(leer);
                     break;
@@ -42,9 +43,35 @@ public class Main {
                 case 7:
                     ConversorMorseATexto.convertir(leer);
                     break;
+
+                    
                 case 8:
-                    System.out.println("Gestor de caballeros (proximamente)");
+                   
+    GestorCaballero gestor = new GestorCaballero();
+    int opc;
+    do {
+        System.out.println("\n--- GESTOR DE CABALLEROS ---");
+        System.out.println("1. Crear caballero");
+        System.out.println("2. Mostrar caballeros");
+        System.out.println("3. Eliminar caballero");
+        System.out.println("4. Batalla de caballeros");
+        System.out.println("0. Volver al menú principal");
+        System.out.print("Elige una opción: ");
+        opc = leer.nextInt();
+        leer.nextLine();
+
+        switch (opc) {
+            case 1: gestor.crearCaballero(leer); break;
+            case 2: gestor.mostrarCaballeros(); break;
+            case 3: gestor.eliminarCaballero(leer); break;
+            case 4: gestor.batalla(leer); break;
+            case 0: System.out.println("Volviendo al menú principal..."); break;
+            default: System.out.println("Opción inválida.");
+        }
+    } while(opc != 0);
                     break;
+
+
                 case 9:
                     System.out.println("Juego libre (proximamente)");
                     break;
